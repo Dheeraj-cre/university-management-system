@@ -1,0 +1,120 @@
+.assignment-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 25px 30px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
+}
+
+.assignment-container h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 25px;
+  font-size: 26px;
+  letter-spacing: 0.5px;
+}
+
+/* --- Form Styling --- */
+.assignment-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.assignment-form select {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border-color 0.3s ease;
+}
+
+.assignment-form select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.assignment-form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.assignment-form button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* --- Table Styling --- */
+.assignment-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 15px;
+}
+
+.assignment-table th,
+.assignment-table td {
+  border: 1px solid #ddd;
+  padding: 12px 14px;
+}
+
+.assignment-table th {
+  background-color: #007bff;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.assignment-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.assignment-table tr:hover {
+  background-color: #f1f7ff;
+  transition: background 0.3s ease;
+}
+
+/* --- Delete Button --- */
+.assignment-table button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.assignment-table button:hover {
+  background-color: #c0392b;
+  transform: scale(1.1);
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .assignment-container {
+    padding: 20px;
+  }
+
+  .assignment-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .assignment-form select,
+  .assignment-form button {
+    width: 100%;
+  }
+}

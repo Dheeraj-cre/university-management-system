@@ -1,0 +1,86 @@
+/* === Student Signup Page Styling === */
+
+.signup-container {
+  max-width: 420px;
+  margin: 80px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.signup-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.signup-container p {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.signup-form input {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.signup-form input:focus {
+  border-color: #2a73e8;
+  box-shadow: 0 0 4px rgba(42, 115, 232, 0.3);
+}
+
+.signup-form button {
+  padding: 12px;
+  background: #2a73e8;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.signup-form button:hover {
+  background: #1f5fd0;
+  transform: translateY(-1px);
+}
+
+.signup-container p.success {
+  color: #1c9a3c;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+.signup-container p.error {
+  color: #d9534f;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .signup-container {
+    margin: 40px 20px;
+    padding: 20px;
+  }
+
+  .signup-container h2 {
+    font-size: 1.5rem;
+  }
+}

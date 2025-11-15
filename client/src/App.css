@@ -1,0 +1,51 @@
+.admission-form-container {
+  width: 450px;
+  margin: 40px auto;
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.admission-form input,
+.admission-form select,
+.admission-form textarea {
+  width: 100%;
+  margin: 8px 0;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.admission-form button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.admission-form button:hover {
+  background: #0056b3;
+}
+
+.admin-admission-list {
+  margin: 30px;
+}
+
+.admin-admission-list table {
+  width: 90%;
+  border-collapse: collapse;
+  margin: auto;
+}
+
+.admin-admission-list th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.admin-admission-list th {
+  background: #f0f0f0;
+}

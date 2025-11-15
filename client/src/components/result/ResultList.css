@@ -1,0 +1,101 @@
+/* ResultList.css */
+
+.result-list-container {
+  padding: 30px;
+  background-color: #f9fbff;
+  min-height: 100vh;
+}
+
+.result-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #2a5298;
+  margin-bottom: 20px;
+}
+
+.table-container {
+  overflow-x: auto;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Table Styling */
+.result-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.result-table th,
+.result-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.result-table th {
+  background: linear-gradient(135deg, #2a5298, #1e3c72);
+  color: #fff;
+  font-weight: 600;
+}
+
+.result-table tr:nth-child(even) {
+  background-color: #f7f9fc;
+}
+
+/* Status Badges */
+.status {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.status.pass {
+  background-color: #28a745;
+}
+
+.status.fail {
+  background-color: #dc3545;
+}
+
+/* Delete Button */
+.delete-btn {
+  background: linear-gradient(135deg, #dc3545, #a71d2a);
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.delete-btn:hover {
+  background: linear-gradient(135deg, #a71d2a, #8b1523);
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .result-list-container {
+    padding: 15px;
+  }
+
+  .result-title {
+    font-size: 1.4rem;
+  }
+
+  .result-table th,
+  .result-table td {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .delete-btn {
+    padding: 6px 10px;
+    font-size: 0.85rem;
+  }
+}

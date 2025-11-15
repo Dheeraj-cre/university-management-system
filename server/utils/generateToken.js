@@ -1,0 +1,6 @@
+import jwt from "jsonwebtoken";
+
+// Function to generate JWT token
+export const generateToken = (userId, role) => {
+  return jwt.sign({ userId, role }, process.env.JWT_SECRET, { expiresIn: "7d" });
+};

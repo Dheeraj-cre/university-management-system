@@ -1,0 +1,69 @@
+.add-attendance-container {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+}
+
+.add-attendance-container h3 {
+  margin-bottom: 15px;
+  color: #333;
+  font-weight: 600;
+  text-align: center;
+}
+
+.add-attendance-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.add-attendance-form input,
+.add-attendance-form select {
+  flex: 1 1 220px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.add-attendance-form input:focus,
+.add-attendance-form select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+}
+
+/* Submit button */
+.btn-submit {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .add-attendance-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .add-attendance-form input,
+  .add-attendance-form select,
+  .btn-submit {
+    width: 100%;
+  }
+}

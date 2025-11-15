@@ -1,0 +1,31 @@
+.faculty-portal-container {
+  padding: 30px;
+  background: #f8faff;
+  min-height: 100vh;
+}
+
+.faculty-courses-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.faculty-courses-table th,
+.faculty-courses-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.faculty-courses-table th {
+  background: #1976d2;
+  color: white;
+}
+
+.faculty-courses-table tr:nth-child(even) {
+  background: #f2f2f2;
+}
+
+.faculty-courses-table tr:hover {
+  background: #e3f2fd;
+}

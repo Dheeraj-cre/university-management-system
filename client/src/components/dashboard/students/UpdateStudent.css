@@ -1,0 +1,78 @@
+.update-student-container {
+  background: #fff;
+  padding: 25px 30px;
+  margin: 30px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 600px;
+}
+
+.update-student-container h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.update-student-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+  color: #555;
+}
+
+.form-input {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+}
+
+.update-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.update-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.03);
+}
+
+@media (max-width: 600px) {
+  .update-student-container {
+    padding: 20px;
+    width: 90%;
+  }
+
+  .form-input {
+    font-size: 14px;
+  }
+
+  .update-btn {
+    font-size: 14px;
+  }
+}

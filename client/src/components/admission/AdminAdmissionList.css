@@ -1,0 +1,108 @@
+.admin-admission-container {
+  width: 90%;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.admin-admission-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #2c3e50;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.styled-table thead {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.styled-table th, .styled-table td {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.styled-table tr:hover {
+  background-color: #f5f7fa;
+  transition: 0.2s ease-in-out;
+}
+
+.no-data {
+  text-align: center;
+  color: #888;
+  font-size: 1.1rem;
+}
+
+button {
+  padding: 6px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.approve-btn {
+  background-color: #28a745;
+  margin-right: 8px;
+}
+
+.approve-btn:hover {
+  background-color: #218838;
+}
+
+.reject-btn {
+  background-color: #dc3545;
+}
+
+.reject-btn:hover {
+  background-color: #c82333;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+  .styled-table thead {
+    display: none;
+  }
+
+  .styled-table, .styled-table tbody, .styled-table tr, .styled-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .styled-table tr {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .styled-table td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+
+  .styled-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    text-align: left;
+    font-weight: bold;
+  }
+}

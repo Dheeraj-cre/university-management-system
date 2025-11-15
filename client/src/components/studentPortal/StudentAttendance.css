@@ -1,0 +1,61 @@
+.student-attendance-container {
+  padding: 30px;
+  background-color: #f9fafb;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.student-attendance-container h2 {
+  text-align: center;
+  color: #222;
+  margin-bottom: 25px;
+}
+
+/* ======= Tables (Summary + Records) ======= */
+.student-attendance-container table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* Table Header */
+.student-attendance-container th {
+  background-color: #f5f5f5;
+  color: #333;
+  font-weight: 600;
+  text-align: center;
+  padding: 12px;
+  border: 1px solid #ccc;
+}
+
+/* Table Data */
+.student-attendance-container td {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+/* Alternating row colors */
+.student-attendance-container tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .student-attendance-container table {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .student-attendance-container h2 {
+    font-size: 1.3rem;
+  }
+}

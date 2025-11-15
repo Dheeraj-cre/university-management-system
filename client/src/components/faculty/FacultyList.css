@@ -1,0 +1,40 @@
+.faculty-container {
+  padding: 20px;
+  background: #f9fafc;
+}
+
+.faculty-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.faculty-table th,
+.faculty-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.faculty-table th {
+  background-color: white;
+  color: black;
+}
+
+.faculty-actions button {
+  margin-right: 8px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.faculty-actions button:first-child {
+  background-color: #007bff;
+  color: white;
+}
+
+.faculty-actions button:last-child {
+  background-color: #dc3545;
+  color: white;
+}

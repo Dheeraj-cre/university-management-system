@@ -1,0 +1,50 @@
+.assign-container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #f9fafc;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.assign-form {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.assign-form select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  flex: 1;
+}
+
+.btn-assign {
+  padding: 10px 20px;
+  background: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn-assign:hover {
+  background: #005fa3;
+}
+
+.assign-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.assign-list th, .assign-list td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.assign-list th {
+  background: #0077cc;
+  color: white;
+}

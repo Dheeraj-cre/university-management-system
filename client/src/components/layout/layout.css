@@ -1,0 +1,159 @@
+/* ===========================
+      SIDEBAR (RESPONSIVE)
+=========================== */
+
+/* MAIN SIDEBAR */
+.sidebar {
+  position: fixed;
+  top: 65px;                     /* Below navbar */
+  left: -260px;                  /* Hidden initially */
+  width: 260px;
+  height: calc(100% - 65px);
+  background: #1e293b;           /* Slate blue */
+  color: #fff;
+  transition: left 0.3s ease-in-out;
+  z-index: 1000;
+  padding: 1rem;
+  overflow-y: auto;
+  border-right: 1px solid #334155;
+}
+
+/* Show Sidebar */
+.sidebar.active {
+  left: 0;
+}
+
+/* Dark overlay behind sidebar */
+.sidebar-overlay {
+  position: fixed;
+  top: 65px; 
+  left: 0;
+  width: 100%;
+  height: calc(100% - 65px);
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 900;
+}
+
+/* Header */
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.sidebar-header h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* Close Button */
+.close-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.close-btn:hover {
+  color: #f87171;
+}
+
+/* Navigation Container */
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Nav Item */
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  color: #cbd5e1;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.25s;
+  font-size: 0.95rem;
+}
+
+.nav-item .icon {
+  display: flex;
+  align-items: center;
+}
+
+/* Hover + Active */
+.nav-item:hover {
+  background: #334155;
+  color: #fff;
+}
+
+.nav-item.active {
+  background: #475569;
+  color: #fff;
+  font-weight: 600;
+  transform: translateX(4px);
+}
+
+/* Scrollbar Styling */
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 30px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* ===========================
+        RESPONSIVE
+=========================== */
+
+/* Tablets - wider sidebar */
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 240px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 220px;
+    left: -220px;
+  }
+
+  .sidebar.active {
+    left: 0;
+  }
+
+  .sidebar-header h2 {
+    font-size: 1rem;
+  }
+
+  .nav-item {
+    padding: 9px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .sidebar {
+    width: 200px;
+    left: -200px;
+  }
+
+  .nav-item {
+    padding: 8px;
+    font-size: 0.85rem;
+  }
+}

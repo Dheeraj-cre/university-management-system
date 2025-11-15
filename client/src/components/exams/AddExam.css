@@ -1,0 +1,81 @@
+.add-exam-container {
+  max-width: 550px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px 35px;
+  transition: all 0.3s ease;
+}
+
+.add-exam-container h2 {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 1.7rem;
+  margin-bottom: 25px;
+}
+
+.add-exam-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.form-row input,
+.form-row select {
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.form-row input:focus,
+.form-row select:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.add-exam-form button {
+  background: #007bff;
+  color: white;
+  padding: 12px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 10px;
+}
+
+.add-exam-form button:hover {
+  background: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .add-exam-container {
+    padding: 20px;
+  }
+
+  .add-exam-form {
+    gap: 10px;
+  }
+
+  .add-exam-container h2 {
+    font-size: 1.4rem;
+  }
+}

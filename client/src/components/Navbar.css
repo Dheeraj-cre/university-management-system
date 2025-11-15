@@ -1,0 +1,178 @@
+.navbar {
+  background-color: #0a2e5c;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.brand {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #ffd700;
+}
+
+/* Dropdown Styling */
+.dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background-color: #163d70;
+  min-width: 180px;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #285fa8;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Mobile Styles */
+.mobile-menu-icon {
+  display: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar-right {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: #0a2e5c;
+    flex-direction: column;
+    width: 200px;
+    border-radius: 6px;
+    padding: 10px 0;
+  }
+
+  .navbar-right.active {
+    display: flex;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+}
+
+/* === Logout Button Styling === */
+.logout-btn {
+  background-color: #e63946; /* red tone */
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  margin-left: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #d62828;
+  transform: scale(1.05);
+}
+
+.logout-btn:active {
+  transform: scale(0.97);
+}
+
+/* Optional: to align it nicely in the navbar */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Admin name button */
+.admin-name-btn {
+  background: transparent;
+  border: none;
+  color: #fff; /* or your navbar text color */
+  font-weight: 500;
+  cursor: pointer;
+  margin-right: 10px;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.admin-name-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Logout button */
+.logout-btn {
+  background-color: #e74c3c; /* red color */
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.logout-btn:hover {
+  background-color: #c0392b;
+}

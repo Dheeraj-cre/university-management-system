@@ -1,0 +1,92 @@
+.add-fee-container {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+}
+
+.add-fee-container:hover {
+  transform: translateY(-3px);
+}
+
+.add-fee-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #2c3e50;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.add-fee-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #34495e;
+}
+
+.form-row input,
+.form-row select {
+  padding: 10px 12px;
+  border: 1px solid #bdc3c7;
+  border-radius: 6px;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.form-row input:focus,
+.form-row select:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+.submit-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #2980b9;
+}
+
+@media (max-width: 600px) {
+  .add-fee-container {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .add-fee-container h2 {
+    font-size: 20px;
+  }
+
+  .form-row input,
+  .form-row select {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  .submit-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
