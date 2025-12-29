@@ -5,6 +5,7 @@ const API_URL = "http://localhost:5000/api/courses";
 export async function fetchCourses() {
   try {
     const res = await fetch(API_URL);
+    // Check if the response is successful  
     if (!res.ok) throw new Error("Failed to fetch courses");
     return await res.json();
   } catch (err) {
