@@ -63,7 +63,7 @@ function Layout() {
   const hideSidebarPaths = [
     "/", "/about",
     "/admission/apply", "/admission/admin", "/admission/status",
-    "/login/student", "/login/faculty", "/login/admin",
+    "/login/student", "/login/faculty",
     "/login/student-signup",
     "/student/portal", "/student/attendance", "/student/enrollment",
   ];
